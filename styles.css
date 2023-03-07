@@ -45,7 +45,7 @@ button:focus {
 }
 
 .home {
-    all: none;
+    all: unset;
 }
 
 .pulse:hover,
