@@ -45,7 +45,8 @@ a {
 
 .subtitle {
     font-size: 18px;
-    color: #ffffff75;
+    color: var(--hover);
+    opacity: 0.75;
 }
 
 .home {
