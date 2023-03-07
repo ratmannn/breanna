@@ -44,6 +44,10 @@ button:focus {
     color: #ffffff75;
 }
 
+.home {
+    all: none;
+}
+
 .pulse:hover,
 .pulse:focus {
     -webkit-animation: pulse 1s;
