@@ -37,8 +37,7 @@ button:focus {
 
 .title {
     font-size: 32px;
-    color: #ffffff;
-    text-transform: uppercase;
+    color: white;
 }
 
 .subtitle {
