@@ -38,6 +38,21 @@ button:focus {
     color: var(--hover);
     transition: 0.7s
 }
+a:link { 
+    text-decoration: none; 
+}
+
+a:visited {
+    text-decoration: none; 
+}
+
+a:hover { 
+    text-decoration: none; 
+}
+
+a:active { 
+    text-decoration: none; 
+}
 
 .subtitle {
     font-size: 18px;
