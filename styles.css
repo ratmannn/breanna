@@ -35,16 +35,15 @@ button:focus {
     transition: 0.7s
 }
 
-.header {
-    text-align: center;
+.title {
+    font-size: 32px;
+    color: #ffffff;
     text-transform: uppercase;
-    color: #fff;
-    font-size: 36px;
 }
 
 .subtitle {
     font-size: 18px;
-    color: #ffffff75
+    color: #ffffff75;
 }
 
 .pulse:hover,
