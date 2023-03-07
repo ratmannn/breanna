@@ -45,7 +45,21 @@ button:focus {
 }
 
 .home {
-    all: unset;
+  color: #fff;
+  text-align: center;
+}
+.home:hover {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--hover), 0 0 20px var(--hover), 0 0 25px var(--hover), 0 0 30px var(--hover), 0 0 35px var(--hover);
+  }
+  
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 15px var(--hover), 0 0 20px var(--hover), 0 0 25px var(--hover), 0 0 30px var(--hover), 0 0 35px var(--hover), 0 0 40px var(--hover);
+  }
 }
 
 .pulse:hover,
