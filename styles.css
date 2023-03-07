@@ -34,15 +34,12 @@ button:focus {
     color: var(--hover);
     transition: 0.7s
 }
-h1 {
-    font-size: 136px;
-}
 
 .header {
     text-align: center;
     text-transform: uppercase;
-    padding: 15px;
     color: #fff;
+    font-size: 36px;
 }
 
 .subtitle {
