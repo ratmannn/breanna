@@ -8,6 +8,15 @@ h1 {
     color: #ffffff;
 }
 
+hr {
+    margin: auto;
+    border: 0;
+    height: 2px;
+    width: 18px;
+    opacity: 60%;
+    background-color: var(--hover);
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -30,13 +39,19 @@ button {
     padding: 1em 2em;
     color: var(--color);
     transition: 0.25s;
+    border-radius: 12px;
 }
 
-button:hover,
-button:focus {
+button:hover, button:focus {
     border-color: var(--hover);
     color: var(--hover);
     transition: 0.7s
+}
+
+button:visited {
+    border-color: var(--color);
+    color: var(--color);
+    background-color: var(--hover);
 }
 
 a {
@@ -47,7 +62,20 @@ a {
     font-size: 18px;
     color: var(--hover);
     opacity: 0.75;
+    margin-top: -5px;
 }
+
+ol .subtitle {
+    text-align: left;
+    margin-left: 46px;
+    margin-top: 6px;
+    line-height: 0.9
+}
+
+li {
+    margin: 12px;
+}
+
 
 .home {
   color: #fff;
@@ -55,7 +83,7 @@ a {
   animation: glow 1s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow {
+@keyframes glow {
   from {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--hover), 0 0 20px var(--hover), 0 0 25px var(--hover), 0 0 30px var(--hover), 0 0 35px var(--hover);
   }
@@ -64,6 +92,87 @@ a {
     text-shadow: 0 0 10px #fff, 0 0 15px var(--hover), 0 0 20px var(--hover), 0 0 25px var(--hover), 0 0 30px var(--hover), 0 0 35px var(--hover), 0 0 40px var(--hover);
   }
 }
+
+.row {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 6px;
+    margin-bottom: 12px;
+}
+
+.gallery {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 6px;
+}
+
+.gallery img {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    vertical-align: middle;
+    width: 100%;
+    filter: invert(76%);
+    border-radius: 12px;
+}
+
+.gallery3 {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 6px;
+}
+
+.gallery3 img {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    vertical-align: middle;
+    width: 100%;
+    filter: invert(76%);
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+    .gallery3 {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+@media screen and (max-width: 800px) {
+    .gallery3 {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+.reference {
+    width: 100%;
+    margin: 3px 0 12px 0;
+    vertical-align: middle;
+    border-radius: 12px;
+    background-color: #3d3d3d;
+    color: var(color);
+}
+.reference h1 {
+    font-size: 26px;
+    margin: 0 6px
+}
+.phonenumber {
+    opacity: 60%;
+    font-size: 14px;
+}
+.gallery button {
+    margin-top: 6px;
+    vertical-align: middle;
+    width: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .gallery {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
 
 .pulse:hover,
 .pulse:focus {
@@ -76,14 +185,52 @@ a {
     --color: #ffffff;
 }
 
+.headerbutton {
+    border-color: var(--hover);
+    color: var(--hover);
+    width: auto;
+}
+
+.skill {
+    display: inline-block;
+    text-align: left;
+    margin-left: 6%;
+    margin-top: -3%;
+    color: var(--hover);
+    opacity: 60%;
+    width: 63%;
+    font-size: 18px;
+}
+
+.skillrateless {
+    text-align: center;
+    color: var(--hover);
+    opacity: 60%;
+    font-size: 18px;
+}
+
+.rating {
+    display: inline-block;
+    text-align: right;
+    margin-right: 6%;
+    margin-top: -3%;
+    width: 24%;
+    font-size: 25px;
+}
+.skilldescription {
+    display: inline-block;
+    margin: -1px 6% 0;
+    line-height: 1.1
+}
+
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 var(--hover);
+        box-shadow: 0 0 12px 0 var(--hover);
     }
 }
 
 @-webkit-keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 var(--hover);
+        box-shadow: 0 0 12px 0 var(--hover);
     }
 }
